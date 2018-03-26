@@ -1,0 +1,248 @@
+body {
+    height: 100%;
+    background: #fbfbfb;
+}
+div,ul,li,p,h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.index-cont {
+    padding: 10px;
+}
+
+/*统计概况*/
+.statistics-box {
+    margin-bottom: 30px;
+}
+.statistics-box .count-list {
+    overflow: hidden;
+}
+.count-list li {
+    float: left;
+    width: 24.2%;
+    margin-left: 1%;
+    background: #fff;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+.count-list li:first-child {
+    margin-left: 0;
+}
+.count-list li .top-line {
+    width: 20px;
+    height: 2px;
+    background: #eee;
+    margin: 0 auto 20px;
+}
+.count-list li .img-box {
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+}
+.count-list li .img-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.count-list li p {
+    font-weight: 700;
+    color: #313131;
+    text-align: center;
+}
+.count-list li h1 {
+    font-size: 48px;
+    color: #ff5400;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.count-list li .number-box {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.number-box label {
+    float: right;
+    font-size: 14px;
+    color: #ff5400;
+}
+.number-box span{
+    float: left;
+    color: #999;
+}
+.number-box span i {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ff5400;
+}
+
+/*常用模块*/
+.common-module {
+    margin-bottom: 30px;
+}
+.common-module h2,.ranking-list-box h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #313131;
+    font-weight: 700;
+}
+.common-module .module-list {
+    width: 100%;
+    height: 150px;
+    padding: 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+}
+.module-list ul {
+    overflow: hidden;
+    height: 100%;
+}
+.module-list ul li {
+    float: left;
+    width: 15%;
+    height: 100%;
+    background: #fbfbfb;
+    margin-left: 2%;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #fbfbfb;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.module-list ul li:first-child {
+    margin-left: 0;
+}
+.module-list ul li span {
+    display: block;
+    width: 24px;
+    height: 21px;
+    margin: 23px auto 10px;
+}
+span.module-1 {
+    background: url("/images/admin/index/module-1.png") no-repeat center top;
+}
+span.module-2 {
+    background: url("/images/admin/index/module-2.png") no-repeat center top;
+}
+span.module-3 {
+    background: url("/images/admin/index/module-3.png") no-repeat center top;
+}
+span.module-4 {
+    background: url("/images/admin/index/module-4.png") no-repeat center top;
+}
+span.module-5 {
+    background: url("/images/admin/index/module-5.png") no-repeat center top;
+}
+span.module-6 {
+    background: url("/images/admin/index/module-6.png") no-repeat center top;
+}
+.module-list ul li p {
+    color: #313131;
+}
+.module-list ul li.cur-module {
+    background: #fff;
+    border-color: #ff5400;
+}
+li.cur-module span {
+    background-position: center bottom;
+}
+.module-list ul li.cur-module p {
+    color: #ff5400;
+}
+
+/*排行榜*/
+.ranking-list-box h2 span{
+    color: #ff5400;
+}
+.ranking-list-box .member-num {
+    float: left;
+    width:  49%;
+    margin-left: 2%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ranking-list-box .member-num:first-child {
+    margin-left: 0;
+}
+.member-num .table-cont {
+    width: 100%;
+    background: #fff;
+    padding: 20px 40px;
+}
+.table-cont>ul {
+    width: 100%;
+}
+.table-cont>ul>li {
+    width: 100%;
+}
+.table-cont>ul>li ul {
+    overflow: hidden;
+    height: 40px;
+    line-height: 40px;
+}
+.table-cont>ul>li ul li {
+    float: left;
+    color: #313131;
+}
+.table-cont>ul>li ul li.store-name {
+    width: 45%;
+    text-align: left;
+    overflow: hidden;
+}
+.store-name span {
+    padding: 0 5px;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin: 10px 15px 0 0;
+    background: #999;
+    color: #fff;
+}
+.store-name p {
+    display: inline-block;
+    max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #313131;
+}
+.store-name span.first {
+    background: #ff5400;
+}
+.store-name span.second {
+    background: #fb8426;
+}
+.store-name span.third {
+    background: #f2b303;
+}
+.table-cont>ul>li ul li.store-membe {
+    width: 30%;
+    text-align: center;
+}
+.table-cont>ul>li ul li.date {
+    width: 25%;
+    text-align: right;
+}
+.msg-use .table-cont>ul>li ul li.store-name {
+    width: 55%;
+}
+.store-name label {
+    float: left;
+    margin-right: 15px;
+    font-weight: normal;
+}
+.msg-use .cont-list .store-name p {
+    max-width: 50%;
+}
+.msg-use .table-cont>ul>li ul li.store-membe {
+    width: 25%;
+}
+.msg-use .table-cont>ul>li ul li.date {
+    width: 20%;
+}
